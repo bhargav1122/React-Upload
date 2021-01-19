@@ -1,0 +1,88 @@
+{
+    "Products":[
+        {
+          "id": 1,
+          "imgURL": "https://s3-ap-southeast-1.amazonaws.com/seenitcdn/654245d0516045c35d.jpg",
+          "name": "Wrong Red Shirt",
+          "size": "S",
+          "price": 400
+        },
+        {
+          "id": 2,
+          "imgURL": "https://i.pinimg.com/736x/27/89/e0/2789e0f50c8ebb74d0b2ddf36d667359.jpg",
+          "name": "Wrong Dotted T shirt",
+          "size": "M",
+          "price": 450
+        },
+        {
+          "id": 3,
+          "imgURL": "https://usplworld-static.s3.ap-south-1.amazonaws.com/static/img/wrogn/products/product_detail/WHTS1075/2.jpeg",
+          "name": "Blue Slevees T Shirt",
+          "size": "L",
+          "price": 550.12
+        },
+        {
+          "id": 4,
+          "imgURL": "https://s3-ap-southeast-1.amazonaws.com/seenitcdn/534405b0549b2d573e.jpg",
+          "name": "Wrong T Shirt",
+          "size": "XL",
+          "price": 552.14
+        },
+        {
+          "id": 5,
+          "imgURL": "https://s3-ap-southeast-1.amazonaws.com/seenitcdn/538665b21f652bb79b.jpg",
+          "name": "Gym Wear",
+          "size": "XXL",
+          "price": 605.14
+        },
+        {
+          "id": 6,
+          "imgURL": "https://i.pinimg.com/564x/09/8c/28/098c283d8e2f4bb4149187d06f801b02.jpg",
+          "name": "Wrong Blue T Shirt",
+          "size": "S",
+          "price": 468.36
+        },
+        {
+          "id": 7,
+          "imgURL": "https://i1.wp.com/cdn-9.tubefollow.com/photos/l/1893405194448924549/virat-kohli-one8-1893405194448924549.jpg",
+          "name": "One 8 Virat Edition",
+          "size": "M",
+          "price": 350
+        },
+        {
+          "id": 8,
+          "imgURL": "https://usplworld-static.s3.ap-south-1.amazonaws.com/static/img/wrogn/products/product_detail/WGTS0701/1.jpeg",
+          "name": "Blue Casual T Shirt",
+          "size": "L",
+          "price": 470.25
+        },
+        {
+          "id": 9,
+          "imgURL": "https://img.looksgud.com/upload/item-image/424/93s6/93s6-wrogn-olive-green-washed-slim-fit-t-shirt_500x500_0.jpg",
+          "name": "Olive Casual T Shirt",
+          "size": "XL",
+          "price": 550
+        },
+        {
+          "id": 10,
+          "imgURL": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2478263/2020/3/10/bfa8931b-c4b4-4788-a8c2-5c5abc2dcda51583836541684-WROGN-Men-Black--Grey-Slim-Fit-Checked-Casual-Shirt-21215838-1.jpg",
+          "name": "Black Checks Shirt",
+          "size": "XS",
+          "price": 499
+        },
+        {
+          "id": 11,
+          "imgURL": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8682031/2019/4/8/7771592f-0118-4bde-a231-c67ed350d6611554700390238-WROGN-Men-Blue--Maroon-Slim-Fit-Checked-Casual-Shirt-4715547-1.jpg",
+          "name": "Multi Color Shirt",
+          "size": "XXL",
+          "price": 452
+        },
+        {
+          "id": 12,
+          "imgURL": "https://www.pixemostudios.com/wp-content/uploads/2019/07/WROGN-VM-1-03-scaled.jpg",
+          "name": "Wrong Blue T Shirt",
+          "size": "S",
+          "price": 750
+        }
+      ]
+}

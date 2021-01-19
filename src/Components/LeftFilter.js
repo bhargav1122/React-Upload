@@ -1,23 +1,26 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function LeftFilter(props) {
+    
+   
     return (
+
         <>
-            <div className="left-filter">
-                <div className="filter-size">
-                    {" "}Sizes:{" "}
-                    <select value={props.size} onChange={props.filterProducts}>
-                        <option value=""> All</option>
-                        <option value="XS"> XS</option>
-                        <option value="S"> S</option>
-                        <option value="M"> M</option>
-                        <option value="L"> L</option>
-                        <option value="XL"> XL</option>
-                        <option value="XXL"> XXL</option>
-                    </select>
-                </div>
+            <div style={{margin:"1rem"}}>Sizes: </div>
+            <div className="sizes-container">
+                
+                {props.filterSizes.map((size) => {
+                    return (
+                        <div className="size-checkbox">
+                        <label>
+                            <input type="checkbox" value={size} onClick={() => {props.onClickfiltersize(size)}} 
+                            checked={props.filtersChecked.includes(size) ? "true" : ""}/>
+                            <span > {size}</span>
+                        </label>
+                        </div>
+                    )
+                })}
             </div>
-            
         </>
     )
 }

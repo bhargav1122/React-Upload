@@ -28,7 +28,7 @@ select{
 
 header{
   grid-area: header;
-  background-color: rgb(30, 30, 30);
+  background-color: #212529;
   color: aliceblue;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ main{
 
 footer{
   grid-area: footer;
-  background-color: rgb(30, 30, 30);
+  background-color:#212529;
   color: aliceblue;
   display: flex;
   justify-content: center;
@@ -56,7 +56,6 @@ footer{
 
 .left-sidebar{
   flex: 20% ;
-  max-width: 250px;
 }
 
 .main{
@@ -105,7 +104,7 @@ footer{
   font-size: 1.5rem;
   height: 4rem;
   border: none;
-  background-color: rgb(30, 30, 30);
+  background-color: #212529;
   color: aliceblue;
   font-size: 1.5rem;
 }
@@ -135,11 +134,12 @@ footer{
 .cart{
   position: absolute;
   height: fit-content;
-  background-color: rgb(30, 30, 30);
+  background-color:#212529;
   width: 450px;
   top: 5rem;
-  right: -150%;
+  right: -100%;
   color: aliceblue;
+  
 }
 
 .cart.active{
@@ -152,7 +152,7 @@ footer{
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.315);
+  border-bottom: 0.1rem solid #495057;
 }
 
 .cart-icon {
@@ -227,7 +227,7 @@ footer{
 .total{
   display: flex;
   flex-direction: column;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.315);
+  border-top: 0.1rem solid #495057;
   min-height: 200px;
 }
 
@@ -251,40 +251,6 @@ footer{
   background-color: #f8961e;
 }
 
-.sizes-container{
-  margin : 1rem;
-  display: flex;
-  flex-wrap: wrap;
 
-}
-
-.size-checkbox{
-  margin: 1rem;
-}
-
-.sizes-container label{
-  cursor: pointer;
-}
-
-.sizes-container label input[type="checkbox"]{
-  display: none;
-}
-
-.size-checkbox span{
-  background: #b7b7a4;
-  position: relative;
-  display: inline;
-  border-radius: 20%;
-  width: 5px;
-  padding: 1rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.size-checkbox label input[type="checkbox"]:checked ~ span
-{
-  background: #212529;
-  color: aliceblue;
-}
 
 

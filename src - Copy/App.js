@@ -5,7 +5,7 @@ import Products from './Components/Products.js';
 import TopFilter from './Components/TopFilter';
 import LeftFilter from './Components/LeftFilter';
 import CartComponent from './Components/CartComponent';
-import Data from './Components/Productsdata.json';
+import Data from "./Components/ProductsData.json"
 
 
 class App extends Component {
@@ -14,14 +14,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      products: Data.products,
-      dataSample:Data.products,
+      products: Data.Products,
+      dataSample:Data.Products,
       cartItems: [],
-      filterSizes: ["XS", "S", "M", "ML", "L", "XL", "XXL"],
       size: "",
       sort: "",
       cartChecked: false,
-      filtersChecked:[],
     }
   }
 
@@ -36,7 +34,6 @@ class App extends Component {
       )
   }
 
-  
 
   onClickCart = () => {
     this.setState({ cartChecked: !this.state.cartChecked })
@@ -79,25 +76,19 @@ class App extends Component {
     }));
   }
 
-  filterProducts = (value,checked) => {
-
-    console.log(value);
-    console.log(checked);
-    console.log(checked.indexOf(value))
-
-    if(checked.length === 0){
+  filterProducts = (event) => {
+    let size = event.target.value;
+    if(size.toString() === ""){
       this.setState({
-        size: value,
+        size: event.target.value,
         products: this.state.dataSample,
       })
     }else{
       this.setState({
-        size:value,
-        products: this.state.dataSample.filter(product => checked.includes(product.size)),
+        size: event.target.value,
+        products: this.state.dataSample.filter(product => product.size === size),
       })
     }
-  
-  
     
   }
 
@@ -109,19 +100,6 @@ class App extends Component {
 
   }
 
-
-  onClickfiltersize = (size) =>{
-    const currentIndex = this.state.filtersChecked.indexOf(size);
-    const newChecked = [...this.state.filtersChecked];
-    if(this.state.filtersChecked.includes(size)){
-      newChecked.splice(currentIndex,1);
-    }
-    else{
-      newChecked.push(size)
-    }
-    this.setState({filtersChecked : newChecked})
-    this.filterProducts(size,newChecked);
-  }
 
   render() {
     return (
@@ -143,19 +121,15 @@ class App extends Component {
               <div className="left-sidebar">
                 <LeftFilter
                   size={this.state.size}
-                  filterProducts={this.filterProducts}
-                  filterSizes={this.state.filterSizes} 
-                  filtersChecked={this.state.filtersChecked} 
-                  onClickfiltersize={this.onClickfiltersize}></LeftFilter>
+                  filterProducts={this.filterProducts}></LeftFilter>
               </div>
               <div className="main">
                 <TopFilter count={this.state.products.length}
                   sort={this.state.sort}
-                  sortProducts={this.sortProducts}
-                  ></TopFilter>
+                  sortProducts={this.sortProducts}></TopFilter>
                 <Products products={this.state.products} addToCart={this.addToCart}></Products>
               </div>
-              <div>
+              <div className="cart-wrapper">
                 <CartComponent
                   cartChecked={this.state.cartChecked}
                   cartItems={this.state.cartItems}
